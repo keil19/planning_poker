@@ -26,7 +26,8 @@ config :planning_poker, PlanningPokerWeb.Endpoint,
   secret_key_base: "jDIMCSq1p6CP3LfT84twdiKEVrGGl+8H3wg1vIYws1rwhBAs3W07+GTBouROsRsh",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
+    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
+    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
   ]
 
 # ## SSL Support

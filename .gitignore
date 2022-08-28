@@ -42,3 +42,11 @@ planning_poker-*.tar
 # In case you use Node.js/npm, you want to ignore these.
 npm-debug.log
 /assets/node_modules/
+/db
+/*.ez
+/node_modules
+/priv/static/
+/config/prod.secret.exs
+/rel
+.DS_Store
+.idea
